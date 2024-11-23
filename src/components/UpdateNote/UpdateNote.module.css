@@ -1,0 +1,95 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+.editDialog {
+  background-color: white;
+  width: 45%;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.editForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.editForm h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.editForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.editForm input,
+.editForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.updateNoteBtn {
+  background-color: rgb(28, 114, 194) !important;
+}
+
+.cancelBtn {
+  background-color: #d9534f !important;
+}
+
+.editFormButtons {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px; 
+  width: auto; 
+  margin-top: 10px; 
+}
+
+.editFormButtons button {
+  flex: 0; 
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 0;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.editFormButtons button[type="submit"] {
+  background-color: rgb(28, 114, 194);
+  border: none;
+  color: white;
+}
+
+.editFormButtons button[type="submit"]:hover {
+  background-color: rgb(106, 175, 198);
+  cursor: pointer;
+}
+
+.editFormButtons button.cancel {
+  background-color: lightgray; 
+  border: none;
+  color: black; 
+}
+
+.editFormButtons button.cancel:hover {
+  background-color: darkgray; 
+  cursor: pointer;
+}

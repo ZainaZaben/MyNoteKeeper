@@ -1,0 +1,63 @@
+.noteItem {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+h2 {
+  margin: 0;
+}
+
+.noteItem .noteDate {
+  font-size: 12px;
+  color: #666;
+  background-color: #dfd1d1;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 2px 5px;
+}
+
+.noteFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+
+.editBtn {
+  background-color: #3db45b;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  color: #e74c3c;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.noteFooter button {
+  visibility: hidden;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.noteItem:hover .noteFooter button {
+  visibility: visible;
+}
+
+.noteFooter button:hover {
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.deleteBtn:hover svg {
+  fill: red; 
+  stroke: rgb(85, 57, 57);
+}

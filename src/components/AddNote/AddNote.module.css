@@ -1,0 +1,79 @@
+.noteForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%; 
+}
+
+.titleInput {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; 
+}
+
+.contentTextarea {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; 
+  resize: none;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 10px; 
+  width: auto;
+  margin-top: 10px; 
+}
+
+.noteForm button {
+  flex: 0; 
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 0;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.noteForm button[type="submit"] {
+  background-color: rgb(28, 114, 194);
+  border: none;
+  color: white;
+}
+
+.noteForm button[type="submit"]:hover {
+  background-color: rgb(106, 175, 198);
+  cursor: pointer;
+}
+
+.noteForm button.cancel {
+  background-color: lightgray; 
+  border: none;
+  color: black; 
+}
+
+.noteForm button.cancel:hover {
+  background-color: darkgray; 
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .noteForm {
+    width: 100%; 
+  }
+
+  .buttonRow {
+    flex-direction: column; 
+    gap: 15px; 
+    align-items: stretch; 
+  }
+
+  .noteForm button {
+    flex: 1; 
+  }
+}

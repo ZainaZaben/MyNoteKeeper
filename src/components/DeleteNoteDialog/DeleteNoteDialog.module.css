@@ -1,0 +1,44 @@
+.confirmationOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmationDialog {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.confirmationDialog h2 {
+  margin-top: 0;
+}
+
+.confirmationDialog p {
+  margin-bottom: 15px;
+}
+
+.confirmationDialog button {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.confirmationDialog button:first-of-type {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+}
+
+.confirmationDialog button:last-of-type {
+  background-color: lightgray;
+  color: black;
+  border: none;
+}
